@@ -6,9 +6,4 @@
     - name: Install httpd
       yum:
         name: httpd
-        state: present
-    - name: Start apache Service
-      service:
-        name: httpd
-        state: started
-        enabled: yes
+        state: absent
