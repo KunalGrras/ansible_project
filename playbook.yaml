@@ -2,8 +2,11 @@
 - name: Install Apache
   hosts: all
   become: yes
+  vars: 
+    - name: httpd
+    - state: present
   tasks:
     - name: Install httpd
       yum:
-        name: httpd
-        state: absent
+        name: {{ package }}
+        state: {{ states }}
