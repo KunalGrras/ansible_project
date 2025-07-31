@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   vars: 
-    - name: httpd
-    - state: present
+    - package: httpd
+    - states: present
   tasks:
     - name: Install httpd
       yum:
