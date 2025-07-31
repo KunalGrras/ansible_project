@@ -4,7 +4,7 @@
   become: yes
   vars: 
     - package: httpd
-    - states: present
+    - states: absent
   tasks:
     - name: Install httpd
       yum:
