@@ -7,7 +7,3 @@
       yum:
         name: httpd
         state: present
-    - name: Create user
-      user:
-        name: manish
-        state: present
